@@ -25,6 +25,11 @@
 	getCurrentProtection	KEYWORD2
 	delCurrentProtection	KEYWORD2
 	resCurrentProtection	KEYWORD2
+	enableWDT	KEYWORD2
+	disableWDT	KEYWORD2
+	resetWDT	KEYWORD2
+	getStateWDT	KEYWORD2
+
 #	####################################################
 #	КОНСТАНТЫ:								   (LITERAL1)
 	LOW	LITERAL1
