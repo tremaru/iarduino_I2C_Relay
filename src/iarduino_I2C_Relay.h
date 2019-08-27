@@ -5,7 +5,7 @@
 //  - Модуль силовых ключей, 4P-канала 10A,                  i2c для Arduino: https://iarduino.ru/shop/Expansion-payments/power-key-4p-i2c.html
 //  - Модуль электромеханических реле на 2-канала,           i2c для Arduino: https://iarduino.ru/shop/Expansion-payments/rele-2ch-i2c.html
 //  - Модуль твердотельных реле на 4-канала,                 i2c для Arduino: https://iarduino.ru/shop/Expansion-payments/solid-rele-4ch-i2c.html
-//  Версия: 1.1.1
+//  Версия: 1.1.2
 //  Последнюю версию библиотеки Вы можете скачать по ссылке: https://iarduino.ru/file/513.html
 //  Подробное описание функции бибилиотеки доступно по ссылкам:
 //  - Функции управления модулем силовых ключей, 4N-канала 3А с измерением тока: https://wiki.iarduino.ru/page/power-key-4n-a-i2c/
