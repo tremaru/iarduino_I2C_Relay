@@ -11,7 +11,9 @@
 	reset	KEYWORD2
 	getAddress	KEYWORD2
 	getVersion	KEYWORD2
-	getModel
+	getModel	KEYWORD2
+	getPullI2C	KEYWORD2
+	setPullI2C	KEYWORD2
 	digitalWrite	KEYWORD2
 	digitalRead	KEYWORD2
 	analogWrite	KEYWORD2
