@@ -5,7 +5,7 @@
 //  - Модуль силовых ключей, 4P-канала 10A,                  i2c для Arduino: https://iarduino.ru/shop/Expansion-payments/power-key-4p-i2c.html
 //  - Модуль электромеханических реле на 2-канала,           i2c для Arduino: https://iarduino.ru/shop/Expansion-payments/rele-2ch-i2c.html
 //  - Модуль твердотельных реле на 4-канала,                 i2c для Arduino: https://iarduino.ru/shop/Expansion-payments/solid-rele-4ch-i2c.html
-//  Версия: 1.1.5
+//  Версия: 1.1.7
 //  Последнюю версию библиотеки Вы можете скачать по ссылке: https://iarduino.ru/file/513.html
 //  Подробное описание функции бибилиотеки доступно по ссылкам:
 //  - Функции управления модулем силовых ключей, 4N-канала 3А с измерением тока: https://wiki.iarduino.ru/page/power-key-4n-a-i2c/
@@ -150,10 +150,10 @@ class iarduino_I2C_Relay{																												//
 		}																																//
 	/**	Пользовательские функции **/																									//
 		#if defined(TwoWire_h) || defined(__ARDUINO_WIRE_IMPLEMENTATION__)																//
-		bool				begin					(TwoWire* i=&Wire	){ selI2C->begin(i); return _begin();	}						//	Определяем функцию инициализации модуля								(Параметр:  объект для работы с аппаратной шиной I2C).
+		bool				begin					(TwoWire* i=&Wire	){ selI2C->init(i); return _begin();	}						//	Определяем функцию инициализации модуля								(Параметр:  объект для работы с аппаратной шиной I2C).
 		#endif																															//
 		#if defined(iarduino_I2C_Software_h)																							//
-		bool				begin					(SoftTwoWire* i		){ selI2C->begin(i); return _begin();	}						//	Определяем функцию инициализации модуля								(Параметр:  объект для работы с программной шиной I2C).
+		bool				begin					(SoftTwoWire* i		){ selI2C->init(i); return _begin();	}						//	Определяем функцию инициализации модуля								(Параметр:  объект для работы с программной шиной I2C).
 		#endif																															//
 		bool				reset					(void														);						//	Объявляем  функцию перезагрузки модуля								(Параметр:  отсутствует).
 		bool				changeAddress			(uint8_t													);						//	Объявляем  функцию смены адреса модуля на шине I2C					(Параметр:  новый адрес модуля).
